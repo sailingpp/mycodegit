@@ -17,10 +17,6 @@ class Soil:
         print(f'该孔第{self.id}层土,{self.layername},深度{self.length},调整系数{self.adjust},测摩阻系数{self.qsi},端阻系数{self.qua}')
 
         
-if __name__=='main':
-    k1=Soil('粘土','1',20.5,20,1,20,200)
-    k1.showmessage()
-
     
 
 
