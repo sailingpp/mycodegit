@@ -12,7 +12,7 @@ class Pile:
         print(f"桩的直径为：{self.diameter:0.3f},桩的半径为：{self.cir:0.3f},桩的面积为：{self.area:0.3f}")
     
 
-
-pile=Pile(0.8)
-pile.showmessage()
+if __name__=='main':
+     pile=Pile(0.8)
+     pile.showmessage()
 

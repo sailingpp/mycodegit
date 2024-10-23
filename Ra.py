@@ -1,6 +1,15 @@
 import pandas as pd
 import math
+from Soil import *
+from Pile import *
 
 
-print('hello world this is from vscode')
+class Ra:
+    def __init__(self):
+        pile=Pile(0.8)
+        pile.showmessage()
+        
+
+
+
 
