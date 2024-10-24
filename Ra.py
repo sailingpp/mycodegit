@@ -7,7 +7,7 @@ from Pile import *
 class Ra:
     def __init__(self):
         pile=Pile(0.8)
-        pile.showmessage()
+        pile.show_message()
         
 
 
