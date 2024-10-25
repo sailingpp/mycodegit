@@ -2,12 +2,21 @@ import pandas as pd
 import math
 from Soil import *
 from Pile import *
+from LoadData import *
 
 
-class Ra:
-    def __init__(self):
-        pile=Pile(0.8)
-        pile.show_message()
+pile=Pile(0.8)
+pile.show_message()
+list_soil=myfun()
+for i in list_soil:
+    print(i.Fqsi*pile.cir)
+
+
+
+
+        
+
+        
         
 
 
