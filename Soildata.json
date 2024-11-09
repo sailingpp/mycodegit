@@ -1,18 +1,18 @@
 {
     "kc1":[
-        {"sid":"第1层","name":"粘土","起始点":20.1,"终止点":19.1,"adjust":1,"qsi":20,"qua":200},
-        {"sid":"第2层","name":"粘土","起始点":19.1,"终止点":16.1,"adjust":1,"qsi":20,"qua":200},
-        {"sid":"第3层","name":"粘土","起始点":16.1,"终止点":14.1,"adjust":1,"qsi":20,"qua":200},
-        {"sid":"第4层","name":"粘土","起始点":14.1,"终止点":13.1,"adjust":1,"qsi":20,"qua":200},
-        {"sid":"第5层","name":"粘土","起始点":13.1,"终止点":12.1,"adjust":1,"qsi":20,"qua":200}
+        {"sid":"第1层","layer_name":"粘土","start":20.1,"end":19.1,"adjust":1,"qsi":20,"qua":0},
+        {"sid":"第2层","layer_name":"沙土","start":19.1,"end":16.1,"adjust":1,"qsi":30,"qua":0},
+        {"sid":"第3层","layer_name":"粉土","start":16.1,"end":14.1,"adjust":1,"qsi":40,"qua":0},
+        {"sid":"第4层","layer_name":"卵石","start":14.1,"end":13.1,"adjust":1,"qsi":70,"qua":200},
+        {"sid":"第5层","layer_name":"碎石","start":13.1,"end":12.1,"adjust":1,"qsi":200,"qua":2000}
         ],
 
     "kc2":[
-        {"sid":"第1层","name":"粘土","起始点":20.2,"终止点":19.2,"adjust":1,"qsi":31,"qua":100},
-        {"sid":"第2层","name":"粘土","起始点":19.2,"终止点":16.2,"adjust":1,"qsi":31,"qua":100},
-        {"sid":"第3层","name":"粘土","起始点":16.2,"终止点":14.2,"adjust":1,"qsi":31,"qua":100},
-        {"sid":"第4层","name":"粘土","起始点":14.2,"终止点":13.2,"adjust":1,"qsi":31,"qua":100},
-        {"sid":"第5层","name":"粘土","起始点":13.2,"终止点":12.2,"adjust":1,"qsi":31,"qua":100}
+        {"sid":"第1层","layer_name":"粘土","start":20.2,"end":19.2,"adjust":1,"qsi":31,"qua":0},
+        {"sid":"第2层","layer_name":"粘土","start":19.2,"end":16.2,"adjust":1,"qsi":31,"qua":0},
+        {"sid":"第3层","layer_name":"粘土","start":16.2,"end":14.2,"adjust":1,"qsi":41,"qua":0},
+        {"sid":"第4层","layer_name":"粘土","start":14.2,"end":13.2,"adjust":1,"qsi":21,"qua":0},
+        {"sid":"第5层","layer_name":"粘土","start":13.2,"end":12.2,"adjust":1,"qsi":51,"qua":100}
         ]
    
 }

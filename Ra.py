@@ -2,14 +2,13 @@ import pandas as pd
 import math
 from Soil import *
 from Pile import *
-from LoadData import *
-
+from LoadJson import *
 
 pile=Pile(0.8)
 pile.show_message()
-list_soil=myfun()
+list_soil=data_process()
 for i in list_soil:
-    print(i.Fqsi*pile.cir)
+    i.show_message()
 
 
 
