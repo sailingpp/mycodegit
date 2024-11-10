@@ -3,7 +3,8 @@ from Soil import *
 import json
 import pandas as pd
 
-list_soil=[]
+
+mydic_soil={}
 
 def data_process():
     json_file_path = r'C:\Users\17653\mycodegit\mycodegit\Soildata.json'
@@ -15,8 +16,9 @@ def data_process():
 
     for i in df.columns:#获取kc
         for j in df[i]:
-            list_soil.append(Soil(i,j['sid'],j['layer_name'],j['start'],j['end'],j['adjust'],j['qsi'],j['qua']))
+            mydic_soil[i]=Soil(i,j['sid'],j['layer_name'],j['start'],j['end'],j['adjust'],j['qsi'],j['qua'])
+           
             
-    return list_soil
+    return mydic_soil
 
     

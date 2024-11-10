@@ -6,9 +6,22 @@ from LoadJson import *
 
 pile=Pile(0.8)
 pile.show_message()
-list_soil=data_process()
-for i in list_soil:
-    i.show_message()
+mydic_soil=data_process()
+print(type(mydic_soil))
+print(mydic_soil.keys())
+for item in mydic_soil.keys():
+    print(mydic_soil[item].show_message())
+
+
+
+
+
+
+
+
+
+
+
 
 
 
