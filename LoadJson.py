@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-
+#换了思路
 mydic_soil={}
 
 def data_process():
