@@ -14,7 +14,6 @@ class SoilLayer:
         self.length=start-end
         self.layer_qsi=qsi*self.length*adjust
 
-
      def show_message(self):
         print(f'{self.id}土,{self.layername},深度{self.length:0.3f},调整系数{self.adjust},测摩阻系数{self.qsi},端阻系数{self.qua}')
 

@@ -3,21 +3,18 @@ import math
 from Pile import *
 from SoilLayer import *
 
-data=pd.read_json('./mycodegit/Soildata.json') 
-df=pd.DataFrame(data)
+
 class Soil:
     dict={}
-    soillayer_list=[]
     pile=Pile(0.8)
-    def __init__(self,laber):
-        
-       
-        
+    def __init__(self,label,dic):
+        self.label=label
+        self.dict=dic
+          
+    def show_message(self):
+        print(self.label)
+
+
+
 
    
-
-
-
-
-        
-    
