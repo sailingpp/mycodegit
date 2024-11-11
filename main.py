@@ -19,10 +19,11 @@ print(layer_dic)
 
 print(type(layer_dic))
 
-sdf=pd.DataFrame(layer_dic)
-print(sdf)
+soildf=pd.DataFrame(layer_dic)
 
 
-#soil=Soil('kc1',layer_dic['kc1'])
 
-#soil.dict['kc1'].show_message()
+soil=Soil('kc1',layer_dic['kc1'])
+
+for i in soil.dict:
+    print(i.show_message())
