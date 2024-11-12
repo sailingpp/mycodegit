@@ -11,8 +11,8 @@ pd.set_option('display.max_colwidth',None)
 pd.set_option('display.expand_frame_repr',False)
 
 #读入json
-data=pd.read_json('./mycodegit/Soildata.json') 
-df=pd.DataFrame(data)
+soil_data=pd.read_json('./mycodegit/Soildata.json') 
+df=pd.DataFrame(soil_data)
 #将读入json给soill类
 #new一个空字典
 layer_dic={}
@@ -21,17 +21,19 @@ for index in df.columns:
     for i in df[index]:
         layer_list.append(SoilLayer(i['sid'],i['layer_name'],i['start'],i['end'],i['adjust'],i['qsi'],i['qua']))
     layer_dic[index]=layer_list
-#
-print(layer_dic)
 
+print(layer_dic.keys())
+
+#根据字典创建一个dataframe ，暂时不用
 soildf=pd.DataFrame(layer_dic)
+#print(soildf)
 
 soil1=Soil('kc1',layer_dic['kc1'])
-
+sum=0
 for i in soil1.dict:
     print(i.show_message(0.8))
+    sum=sum+i.get_fqsi(0.8)
+print(sum)
+print('eeeeeeeeeeeeeeeeeeee')
 
-soil2=Soil('kc2',layer_dic['kc2'])
-
-for i in soil2.dict:
-    print(i.show_message(0.8))
+print(len(soil1.dict))
