@@ -26,7 +26,6 @@ print(layer_dic)
 
 soildf=pd.DataFrame(layer_dic)
 
-
 soil1=Soil('kc1',layer_dic['kc1'])
 
 for i in soil1.dict:
