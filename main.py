@@ -21,7 +21,7 @@ print(type(layer_dic))
 
 soildf=pd.DataFrame(layer_dic)
 
-
+print(soildf)
 
 soil=Soil('kc1',layer_dic['kc1'])
 
