@@ -29,11 +29,8 @@ soildf=pd.DataFrame(layer_dic)
 #print(soildf)
 
 soil1=Soil('kc1',layer_dic['kc1'])
-sum=0
-for i in soil1.dict:
-    print(i.show_message(0.8))
-    sum=sum+i.get_fqsi(0.8)
-print(sum)
+
+
 print('eeeeeeeeeeeeeeeeeeee')
 
-print(len(soil1.dict))
+print(soil1.show_soilmessage(0.8))
