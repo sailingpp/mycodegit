@@ -36,5 +36,7 @@ for k in layer_dic.keys():
 for item in soil:
     print(item.show_soilmessage(0.6))
 
+print('20241113')
+
 
 
