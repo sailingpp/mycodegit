@@ -16,6 +16,7 @@ class Soil:
 
     def show_soilmessage(self,diameter):
         print(self.label)
+        print(f'桩直径：{diameter:0.3f}')
         for i in self.dict:
             print(i.show_message(diameter))
         print(f'总的侧阻力：{self.get_sumfqsi(diameter):0.3f}KN')

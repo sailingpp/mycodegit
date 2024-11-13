@@ -4,6 +4,7 @@ from Soil import *
 from Pile import *
 from LoadJson import *
 
+#废弃
 pile=Pile(0.8)
 pile.show_message()
 mydic_soil=data_process()

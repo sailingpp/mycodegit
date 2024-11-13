@@ -27,10 +27,14 @@ print(layer_dic.keys())
 #根据字典创建一个dataframe ，暂时不用
 soildf=pd.DataFrame(layer_dic)
 #print(soildf)
+#soildf.to_excel('./mycodegit/soil.xlsx')
 
-soil1=Soil('kc1',layer_dic['kc1'])
+soil=[]
+for k in layer_dic.keys():
+    soil.append(Soil(k,layer_dic[k]))
+
+for item in soil:
+    print(item.show_soilmessage(0.6))
 
 
-print('eeeeeeeeeeeeeeeeeeee')
 
-print(soil1.show_soilmessage(0.8))
